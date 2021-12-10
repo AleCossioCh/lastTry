@@ -7,7 +7,62 @@
 <!DOCTYPE html>
 <html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
   <head>
-    <meta charset="utf-8">
+
+      <style>
+
+        .blob-code-deletion {
+            background-color: #FFEBE9;
+            outline: 1px dashed transparent;
+        }
+
+        .blob-code-deletion .x {
+            color: #24292f;
+            background-color: rgba(255, 129, 130, 0.4);
+        }
+
+        .blob-code-addition .x {
+            color: #24292f;
+            background-color: #ABF2BC;
+        }
+
+        .blob-code-addition {
+            background-color: #E6FFEC;
+            outline: 1px dotted transparent;
+        }
+
+        .blob-code-hunk {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            background-color: #ddf4ff;
+            border-width: 1px 0;
+        }
+
+        .file-header {
+            padding: 5px 10px;
+            background-color: #f6f8fa;
+            border-bottom: 1px solid #d0d7de;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        .file-diff-split .empty-cell {
+            cursor: default;
+            background-color: rgba(234, 238, 242, 0.5);
+            border-right-color: hsl(210deg 18% 87%);
+        }
+
+        td,
+        th {
+            padding: 0;
+        }
+
+        .diff-table {
+            width: 100%;
+            border-collapse: separate;
+        }
+    </style>
+
+      <meta charset="utf-8">
   <link rel="dns-prefetch" href="https://github.githubassets.com">
   <link rel="dns-prefetch" href="https://avatars.githubusercontent.com">
   <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
